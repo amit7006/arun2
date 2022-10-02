@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Fitness World</title>
+</head>
+<style>
+    body {
+        margin: 0%;
+        background: url("images/dumbbell-gc190b7dc6_1920.jpg");
+        padding: 0px;
+    }
+
+
+    .left {
+
+        height: 3px;
+
+        margin: 28px;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        font-family: cursive;
+        color: silver;
+    }
+
+    .left img {
+        /* height: 80px; */
+        width: 110px;
+        /* background-color: silver; */
+        filter: invert(90%);
+        /* text-align: center; */
+
+    }
+
+    .mid {
+
+        height: 3px;
+        display: block;
+        margin: 68px auto;
+        width: 600px;
+        height: fit-content;
+        padding-left: 40px;
+
+
+
+        top: 20px;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        display: inline-block;
+
+        height: 3px;
+        color: white;
+        margin: 48px auto;
+        top: 20px;
+
+    }
+
+    .right button {
+        border: double;
+        color: black;
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 12px;
+
+        width: 80px;
+        height: 25px;
+
+    }
+
+    .right button:hover {
+        color: aliceblue;
+        background-color: black;
+    }
+
+    .navbar {
+        display: inline;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline;
+        padding-left: 30px;
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        color: silver;
+        text-decoration: none;
+
+    }
+
+    .navbar li a.active,
+    .navbar li a:hover {
+        color: white;
+        appearance: bold;
+        /* font-family: Courier; */
+
+    }
+
+    section::before {
+        content: '';
+         /* background: url('images/fitness-gb0206f2a0_1920.jpg');  */
+        background-color: rgb(155, 74, 74);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+
+    }
+    .container div{
+        background: black;
+        position: relative;
+        height: auto;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        width: auto;
+        height: fit-content;
+        border:  solid 2px green;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+justify-content: center;
+        color: navajowhite;
+        padding: 20px;
+        margin: 11px;
+        border-radius: 15px;
+    }
+
+    .container h2 {
+        margin-top: 5px;
+        justify-content: flex-start;
+        margin-bottom: 3rem;
+    }
+
+    .container div input {
+        margin: -4px auto;
+         width: 250px; 
+        color: white;
+        background: none;
+        border: inset 2px black;
+        border-radius: 15px;
+       
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        margin: 7px;
+    }
+
+    .container div button {
+        display: block;
+        margin: auto;
+    }
+
+    .btn {
+        border: double;
+        color: black;
+        background-color: rgb(136, 245, 136);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-style: bold;
+        border-radius: 12px;
+        font-weight: bold;
+        width: 260px;
+        height: 25px;
+    }
+
+    .container div button:hover {
+        color: aliceblue;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images\sports-g61e12f17f_1280.png" alt="Fitness world">
+            <div>
+                Fitness World
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Fitness Zone</a></li>
+                <li><a href="">Products</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button type="email">Mail us</button>
+            <button type="call">Call us</button>
+        </div>
+    </header>
+    <section class="container">
+    <div > 
+        <h2>you are on hunt . . . </h2>
+        <div>
+            <input type="email" placeholder="  email"><br>
+
+            <input type="mobile" placeholder="  mobile no"><br>
+            <input type="address" placeholder="address"><br>
+            <input type="text" placeholder=" gender ">
+            <br>
+            <input type="text" placeholder=" suggestions ">
+            <br>
+
+            <button class="btn">submit</button>
+        </div>
+    </div></section>
+    
+
+</body>
+
+</html>
